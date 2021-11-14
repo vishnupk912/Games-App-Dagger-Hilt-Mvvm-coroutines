@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginRight="12dp"
+    android:layout_marginTop="12dp"
+    android:id="@+id/cv_lay"
+    android:layout_marginLeft="12dp"
+    android:background="@drawable/round12dp"
+    android:elevation="4dp"
+    android:layout_height="wrap_content">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/roundedImageView"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:padding="12dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/coc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:riv_corner_radius="12dp" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:textSize="14sp"
+        android:fontFamily="@font/cerapro"
+        android:text="Clash Of Clans"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/roundedImageView"
+        app:layout_constraintTop_toTopOf="@+id/roundedImageView" />
+
+    <TextView
+        android:id="@+id/tv_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montblack"
+        android:text="4"
+        android:textColor="@color/yellow"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_title"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="4dp"
+        android:layout_height="4dp"
+        android:scaleType="fitXY"
+        android:tint="#FFC107"
+        android:src="@drawable/ic_star"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_rating"
+        app:layout_constraintStart_toEndOf="@+id/tv_rating"
+        app:layout_constraintTop_toTopOf="@+id/tv_rating"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:fontFamily="@font/montsemibold"
+        android:text="Rating"
+        android:textColor="#838281"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_rating"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/tv_rating" />
+
+    <LinearLayout
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/roundyellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_baseline_double_arrow_24"
+            />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
